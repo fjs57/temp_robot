@@ -15,7 +15,8 @@
 #define LOG_DEFAULT_LEVEL TracePriority
 
 // LIDAR ------------------------------------------------------------
-#define LIDAR_COMPORT "/dev/ydlidar"
+// #define LIDAR_COMPORT "/dev/ydlidar"
+#include "lidar_comport.h"
 #define LIDAR_BAUDRATE 128000
 
 #define LIDAR_DETECTION_RADIUS 4.f
