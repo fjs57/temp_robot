@@ -6,6 +6,7 @@
 
 #include "Log.h"
 #include "ClientUDP.h"
+#include "CAN.h"
 
 bool lidar_init_ret = false;
 int time_loop = 10;
@@ -16,6 +17,8 @@ int main(int argc, char *argv[]) {
 
 	Logger::EnableFileOutput();
 	LOG_INFO("Program Start");
+
+	CAN::init();
 
 	Position target;
 	target.x = -0.75;

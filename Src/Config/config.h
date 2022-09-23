@@ -86,6 +86,12 @@
 
 #define PATH_PLANNER_GRID_MESH_SIZE 0.02f
 
+// CAN PARAMETERS ------------------------------------------------------
+
+#define CAN_BITRATE_CMD "sudo ip link set can0 type can bitrate 88880"
+#define CAN_RX_FILTER_ID 0x0F0
+#define CAN_RX_FILTER_MASK 0x7FF
+
 // UDP SERVER -----------------------------------------------------------
 #define UDP_ADDR "224.0.0.80"
 #define UDP_PORT 4003
