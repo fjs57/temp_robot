@@ -24,9 +24,6 @@ OBJS_C=$(patsubst %.cpp, $(OBJ_DIR)/%.o, $(shell find ./Src -name *.cpp))
 
 APPL_NAME=robot 
 
-# all :
-# 	@echo $(CFLAGS)
-
 default: all
 all : $(APPL_NAME)
 
