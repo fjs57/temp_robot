@@ -1,1 +1,0 @@
-#define LIDAR_COMPORT "/dev/ydlidar"
