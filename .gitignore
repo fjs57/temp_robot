@@ -2,3 +2,4 @@ Logs/*
 !Logs/*.md
 Build/*
 .vscode/
+Build/Bin/robot
