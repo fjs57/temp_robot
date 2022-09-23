@@ -8,8 +8,11 @@
 #include "ClientUDP.h"
 
 bool lidar_init_ret = false;
+int time_loop = 10;
 
 int main(int argc, char *argv[]) {
+
+	if(argc>1) time_loop = atoi(argv[1]);
 
 	Logger::EnableFileOutput();
 	LOG_INFO("Program Start");
@@ -33,7 +36,7 @@ int main(int argc, char *argv[]) {
 	sleep(1);
 	Terrain::enable();
 
-	for(int i=0; i<atoi(argv[1]); i++)
+	for(int i=0; i<time_loop; i++)
 	{
 		Odometry::log();
 		sleep(1);

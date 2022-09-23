@@ -305,7 +305,16 @@ int udp_server::timed_recv(char *msg, size_t max_size, int max_wait_ms)
     struct timeval timeout;
     timeout.tv_sec = max_wait_ms / 1000;
     timeout.tv_usec = (max_wait_ms % 1000) * 1000;
+// ignore the following error
+/*
+Src/Comms/UDP.cpp:308:39: warning: passing argument 2 to restrict-qualified parameter aliases with arguments 3, 4 [-Wrestrict]
+  308 |     int retval = select(f_socket + 1, &s, &s, &s, &timeout);
+      |                                       ^~  ~~  ~~
+*/
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wrestrict"
     int retval = select(f_socket + 1, &s, &s, &s, &timeout);
+#pragma GCC diagnostic pop
     if(retval == -1)
     {
         // select() set errno accordingly
