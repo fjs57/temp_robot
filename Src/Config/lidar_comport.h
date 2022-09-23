@@ -1,1 +1,1 @@
-#define LIDAR_COMPORT "/dev/ttyUSB0"
+#define LIDAR_COMPORT "/dev/ydlidar"
