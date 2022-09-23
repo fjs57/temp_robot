@@ -2,4 +2,3 @@ Logs/*
 !Logs/*.md
 Build/Obj/*
 .vscode/
-Src/Config/lidar_comport.h
