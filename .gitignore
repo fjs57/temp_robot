@@ -1,3 +1,4 @@
 Logs/*
-Build/*
+!Logs/*.md
+Build/Obj/*
 .vscode/
