@@ -12,7 +12,7 @@
 #define LOG_FILE_ENABLE false
 #define LOG_DEFAULT_FILEPATH "Logs/cdfr.log"
 // DebugPriority, TracePriority, InfoPriority, WarnPriority, ErrorPriority, CriticalPriority
-#define LOG_DEFAULT_LEVEL TracePriority
+#define LOG_DEFAULT_LEVEL DebugPriority
 
 // LIDAR ------------------------------------------------------------
 #ifdef __ARM_ARCH_6__
