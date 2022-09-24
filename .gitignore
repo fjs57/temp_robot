@@ -1,5 +1,4 @@
 Logs/*
-!Logs/*.md
+!Logs/.gitkeep
 Build/*
 .vscode/
-Build/Bin/robot
